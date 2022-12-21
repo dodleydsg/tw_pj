@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>{Name of Article}</title>
+        <link rel="stylesheet" href="./dist/output.css"/>
+    </head>
+    <body class="min-h-screen">
+        <section class="hidden container mx-auto lg:flex py-0 max-h-11 my-4 justify-between items-center text-xs">
+            <div class="space-x-3 flex items-center ">
+                <div class="inline-flex items-center gap-2">
+                    <img src="./assets/images/weather.svg" alt="">
+                    <p>15&deg;C New York</p>
+                </div>
+                <div class="inline-flex items-center gap-2">
+                    <img src="./assets/images/clock.svg" alt="">
+                    <p>Wednesday, 10 Jan 2022</p>
+                </div>
+                <div class="h-full bg-primary-500 text-white p-2">Breaking news</div>
+                <div class="inline-flex whitespace-nowrap items-center">
+                    <span>Indonesia says located black box recorders from crashed plane</span>
+                </div>
+            </div>
+            <div class="space-x-3">
+                <span class="h-3 w-3 rounded-xl"></span>
+                <span class="h-3 w-3 rounded-xl"></span>
+                <span class="h-3 w-3 rounded-xl"></span>
+                <span class="h-3 w-3 rounded-xl"></span>
+            </div>
+            <!-- Contains the top which displays time, hidden with width < 768px -->
+        </section>
+        <section class="mx-auto container">
+            <!-- Contains the main logo and promo section. hidden on devices with width < 768px -->
+            <div class="grid h-20 grid-cols-12">
+                <div class="hidden lg:col-span-4 lg:flex justify-start items-center">
+                    <a href="index.html" class="flex gap-4 items-center">
+                        <img src="./assets/images/logo.png" alt=""/>
+                        <h1 class="font-header font-bold text-4xl cursor-pointer">
+                            News<span class=" text-primary-500 font-header">cast</span>
+                        </h1>
+                    </a>
+                </div>
+                <div class="col-span-12 lg:col-span-8 px-6 flex items-center justify-between bg-[url('././assets/images/promo_cover.jpg')] bg-cover">
+                    <div class="text-white font-light text-xs lg:text-base py-2">
+                        <p>Best selling book and magazine</p>
+                        <p>Theme of all time</p>
+                        <p class="font-header italic text-primary-600 my-1">Experience the change</p>
+                    </div>
+                    <div>
+                        <button class="bg-primary-500 hover:bg-primary-600 hover:transition-all text-white px-2 lg:px-6 lg:py-4 py-2">
+                            Purchase Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lg:mx-auto lg:container lg:my-6">
+            <!-- Contains the proper navigation bar -->
+            <div class="bg-ncDark flex container mx-auto justify-between lg:hidden p-3">
+                <!--Navbar for mobile -->
+                <div class="col-span-4 flex justify-start items-center">
+                    <div class="flex gap-4 items-center">
+                        <img src="./assets/images/logo.png" alt="">
+                        <h1 class="font-header font-bold text-white text-2xl cursor-pointer">
+                            News<span class=" text-primary-500 font-header">cast</span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center cursor-pointer">
+                    <img src="./assets/images/menu_icon.svg"
+                         id="menu_toggle"
+                         width="24px"
+                         height="24px"
+                         alt=""/>
+                </div>
+            </div>
+            <div class="lg:flex container mx-auto items-center origin-top delay-300 scale-y-0 absolute inset-x-0 lg:static lg:scale-100 transition-transform justify-between bg-ncDark lg:pr-6"
+                 id="menu_container">
+                <div class="flex flex-col lg:flex-row">
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:duration-300  font-xl ">Home</a>
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:duration-300  font-xl">International</a>
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:duration-300  font-xl">Sports</a>
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:duration-300  font-xl">Opinion</a>
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:duration-300  font-xl">Business</a>
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:duration-300  font-xl">Youth</a>
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:duration-300  font-xl">Entertainment</a>
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:duration-300  font-xl">Lifestyle</a>
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:duration-300  font-xl">Pages</a>
+                </div>
+                <div class="pb-4 lg:pb-0">
+                    <!-- Search form -->
+                    <form action="#" class="px-6">
+                        <input type="text"
+                               class="min-h-full w-full lg:w-auto p-4 bg-ncDark placeholder:text-gray-400 placeholder:font-light placeholder:text-xs text-gray-300 font-light text-sm border border-gray-600 outline-none"
+                               placeholder="Search for"/>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="mx-auto container p-4 lg:p-0 my-8">
+            <h1 class="font-header text-4xl font-bold w-1/2">Now Is the Time to Think About Your Small Business Success</h1>
+            <div class="mt-8 space-y-4">
+                <img src="./assets/images/1.jpg" class="w-1/3 h-auto" alt=""/>
+                <p class="text-lg opacity-80">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci nulla earum magni? Sint provident omnis voluptatibus, maiores autem quam reprehenderit, similique voluptates nulla voluptas harum corporis veniam maxime dolor facilis porro iure ullam alias ad facere! Asperiores assumenda reiciendis voluptatem nobis possimus aperiam adipisci tempore quibusdam earum, sit, et modi dicta sed magni debitis vel pariatur quas odio deserunt, ducimus laudantium. Tenetur optio repudiandae adipisci voluptatum incidunt rem, cupiditate illum voluptate eaque facilis dignissimos. Voluptatum fugiat magnam aperiam repellendus. Qui, fuga? Deleniti laudantium earum alias impedit ipsa ratione libero temporibus eius. Optio ullam sunt nostrum quae iste, voluptate aperiam.
+                </p>
+                <p class="text-lg opacity-80">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci nulla earum magni? Sint provident omnis voluptatibus, maiores autem quam reprehenderit, similique voluptates nulla voluptas harum corporis veniam maxime dolor facilis porro iure ullam alias ad facere! Asperiores assumenda reiciendis voluptatem nobis possimus aperiam adipisci tempore quibusdam earum, sit, et modi dicta sed magni debitis vel pariatur quas odio deserunt, ducimus laudantium. Tenetur optio repudiandae adipisci voluptatum incidunt rem, cupiditate illum voluptate eaque facilis dignissimos. Voluptatum fugiat magnam aperiam repellendus. Qui, fuga? Deleniti laudantium earum alias impedit ipsa ratione libero temporibus eius. Optio ullam sunt nostrum quae iste, voluptate aperiam.
+                </p>
+            </div>
+        </section>
+        <section class="p-4 lg:p-0 container mx-auto">
+            <div class="grid grid-cols-1 space-y-6 lg:space-y-0 lg:grid-cols-3 lg:gap-4">
+                <div class="col-span-1 lg:col-span-2 divide-y divide-ncDark">
+                    <h2 class="text-primary-500 font-header text-2xl py-2">
+                        Related
+                    </h2>
+                    <div class="grid grid-cols-1 gap-4 space-y-4 lg:space-y-0 lg:grid-cols-2 py-4">
+                        <a href="#" class="block">
+                            <div style="background-image: url('./assets/images/5.jpg');"
+                                 class="bg-cover h-80">
+                            </div>
+                            <p class="font-light text-xs opacity-75 mt-4">
+                                Craig Bator - 27 Dec 2020
+                            </p>
+                            <h3 class="font-header text-2xl my-2">
+                                Now Is the Time to Think About Your Small  Business Success
+                            </h3>
+                            <p class="font-light opacity-75">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas. Metus at in fames vitae posuere ut vel vulputate....
+                            </p>
+                        </a>
+                        <div class="space-y-4">
+                            <a href="#" class="grid grid-cols-4 gap-2">
+                                <div class="col-span-1 bg-cover h-24"
+                                     style="background-image: url('./assets/images/6.jpg');">
+                                </div>
+                                <div class="col-span-3">
+                                    <p class="font-light text-xs">
+                                        Craig Bator - 27 Dec 2020
+                                    </p>
+                                    <h3 class="font-header text-xl my-2">
+                                        Now Is the Time to Think About Your Small  Business Success
+                                    </h3>
+                                </div>
+                            </a>
+                            <a href="#" class="grid grid-cols-4 gap-2">
+                                <div class="col-span-1 bg-cover h-24"
+                                     style="background-image: url('./assets/images/7.jpg');">
+                                </div>
+                                <div class="col-span-3">
+                                    <p class="font-light text-xs">
+                                        Craig Bator - 27 Dec 2020
+                                    </p>
+                                    <h3 class="font-header text-xl my-2">
+                                        Things to Look For in a Financial Trading Platform
+                                    </h3>
+                                </div>
+                            </a>
+                            <a href="#" class="grid grid-cols-4 gap-2">
+                                <div class="col-span-1 bg-cover h-24"
+                                     style="background-image: url('./assets/images/8.jpg');">
+                                </div>
+                                <div class="col-span-3">
+                                    <p class="font-light text-xs">
+                                        Craig Bator - 27 Dec 2020
+                                    </p>
+                                    <h3 class="font-header text-xl my-2">
+                                        The only thing that overcomes hard luck is hard
+                                        work
+                                    </h3>
+                                </div>
+                            </a>
+                            <a href="#" class="grid grid-cols-4 gap-2">
+                                <div class="col-span-1 bg-cover h-24"
+                                     style="background-image: url('./assets/images/9.jpg');">
+                                </div>
+                                <div class="col-span-3">
+                                    <p class="font-light text-xs">
+                                        Craig Bator - 27 Dec 2020
+                                    </p>
+                                    <h3 class="font-header text-xl my-2">
+                                        Success is not a good teacher failure makes you
+                                        humble
+                                    </h3>
+                                </div>
+                            </a>
+                            <a href="#" class="grid grid-cols-4 gap-2">
+                                <div class="col-span-1 bg-cover h-24"
+                                     style="background-image: url('./assets/images/10.jpg');">
+                                </div>
+                                <div class="col-span-3">
+                                    <p class="font-light text-xs">
+                                        Craig Bator - 27 Dec 2020
+                                    </p>
+                                    <h3 class="font-header text-xl my-2">
+                                        At Value-Focused Hotels, the Free Breakfast Gets
+                                        Bigger
+                                    </h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-1 ">
+                    <div class="divide-y divide-ncDark">
+                        <div class="flex justify-between items-end py-2 mt-1">
+                            <a href='#'
+                               class="font-header hover:text-primary-600 active:text-primary-600 text-lg">
+                                Recent
+                            </a>
+                            <a href='#'
+                               class="font-header hover:text-primary-600 active:text-primary-600 text-lg">
+                                Trending
+                            </a>
+                            <a href='#'
+                               class="font-header hover:text-primary-600 active:text-primary-600 text-lg">
+                                Most Views
+                            </a>
+                        </div>
+                        <div>
+                            <div class="space-y-4 my-4">
+                                <a href="#" class="grid grid-cols-4 gap-2">
+                                    <div class="col-span-1 bg-cover h-24"
+                                         style="background-image: url('./assets/images/11.jpg');">
+                                    </div>
+                                    <div class="col-span-3">
+                                        <p class="font-light text-xs">
+                                            Craig Bator - 27 Dec 2020
+                                        </p>
+                                        <h3 class="font-header text-xl my-2">
+                                            Gluten-Free Almond Cake
+                                            with Berries
+                                        </h3>
+                                    </div>
+                                </a>
+                                <a href="#" class="grid grid-cols-4 gap-2">
+                                    <div class="col-span-1 bg-cover h-24"
+                                         style="background-image: url('./assets/images/12.jpg');">
+                                    </div>
+                                    <div class="col-span-3">
+                                        <p class="font-light text-xs">
+                                            Craig Bator - 27 Dec 2020
+                                        </p>
+                                        <h3 class="font-header text-xl my-2">
+                                            Enjoy My Favourite Molten
+                                            Chocolate Cake
+                                        </h3>
+                                    </div>
+                                </a>
+                                <a href="#" class="grid grid-cols-4 gap-2">
+                                    <div class="col-span-1 bg-cover h-24"
+                                         style="background-image: url('./assets/images/13.jpg');">
+                                    </div>
+                                    <div class="col-span-3">
+                                        <p class="font-light text-xs">
+                                            Craig Bator - 27 Dec 2020
+                                        </p>
+                                        <h3 class="font-header text-xl my-2">
+                                            They back return to you
+                                            Kennedy Darlings
+                                        </h3>
+                                    </div>
+                                </a>
+                                <a href="#" class="grid grid-cols-4 gap-2">
+                                    <div class="col-span-1 bg-cover h-24"
+                                         style="background-image: url('./assets/images/14.jpg');">
+                                    </div>
+                                    <div class="col-span-3">
+                                        <p class="font-light text-xs">
+                                            Craig Bator - 27 Dec 2020
+                                        </p>
+                                        <h3 class="font-header text-xl my-2">
+                                            The art of racing with speed
+                                            Motor GP
+                                        </h3>
+                                    </div>
+                                </a>
+                                <a href="#" class="grid grid-cols-4 gap-2">
+                                    <div class="col-span-1 bg-cover h-24"
+                                         style="background-image: url('./assets/images/15.jpg');">
+                                    </div>
+                                    <div class="col-span-3">
+                                        <p class="font-light text-xs">
+                                            Craig Bator - 27 Dec 2020
+                                        </p>
+                                        <h3 class="font-header text-xl my-2">
+                                            Home team takes the win
+                                            – NBA 2020
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-ncDark">
+            <div class="container mx-auto px-4 py-8">
+                <div class="grid grid-cols-4 gap-2">
+                    <div class="col-span-4 lg:col-span-1 space-y-8">
+                        <div class="gap-4 items-center flex">
+                            <img src="./assets/images/logo.png" alt=""/>
+                            <h1 class="font-header font-bold text-4xl text-white cursor-pointer">
+                                News<span class=" text-primary-500 font-header">cast</span>
+                            </h1>
+                        </div>
+                        <p class="text-white opacity-75">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, pellentesque dictum posuere id diam rutrum.
+                        </p>
+                        <div class="flex items-center justify-start gap-x-8">
+                            <div class="h-12 w-12 rounded-[48px] flex bg-[#1B7BFD] justify-center items-center">
+                                <img src="./assets/images/facebook.svg" alt="">
+                            </div>
+                            <div class="h-12 w-12 rounded-[48px] bg-[#42C0F5] flex justify-center items-center">
+                                <img src="./assets/images/twitter.svg" alt="">
+                            </div>
+                            <div class="h-12 w-12 rounded-[48px] bg-[#C23785] flex justify-center items-center">
+                                <img src="./assets/images/instagram.svg" alt="">
+                            </div>
+                            <div class="h-12 w-12 rounded-[48px] bg-[#EF5043] flex justify-center items-center">
+                                <img src="./assets/images/youtube.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            let toggle = document.getElementById('menu_toggle');
+            let menuContainer = document.getElementById('menu_container');
+            toggle.addEventListener('click', () => {
+                menuContainer.classList.toggle('scale-y-0');
+            } , false)
+
+
+        </script>
+    </body>
+</html>

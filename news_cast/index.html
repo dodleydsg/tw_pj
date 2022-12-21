@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Welcome to Newscast | Home</title>
+        <link rel="stylesheet" href="./dist/output.css" />
+    </head>
+    <body class="min-h-screen">
+        <section class="hidden container mx-auto lg:flex py-0 max-h-11 my-4 justify-between items-center text-xs">
+            <div class="space-x-3 flex items-center ">
+                <div class="inline-flex items-center gap-2">
+                    <img src="./assets/images/weather.svg" alt="">
+                    <p>15&deg;C New York</p>
+                </div>
+                <div class="inline-flex items-center gap-2">
+                    <img src="./assets/images/clock.svg" alt="">
+                    <p>Wednesday, 10 Jan 2022</p>
+                </div>
+                <div class="h-full bg-primary-500 text-white p-2">Breaking news</div>
+                <div class="inline-flex whitespace-nowrap items-center">
+                    <span>Indonesia says located black box recorders from crashed plane</span>
+                </div>
+            </div>
+            <div class="space-x-3">
+                <span class="h-3 w-3 rounded-xl"></span>
+                <span class="h-3 w-3 rounded-xl"></span>
+                <span class="h-3 w-3 rounded-xl"></span>
+                <span class="h-3 w-3 rounded-xl"></span>
+            </div>
+            <!-- Contains the top which displays time, hidden with width < 768px -->
+        </section>
+        <section class="mx-auto container">
+            <!-- Contains the main logo and promo section. hidden on devices with width < 768px -->
+            <div class="grid h-20 grid-cols-12">
+                <div class="hidden lg:col-span-4 lg:flex justify-start items-center">
+                    <a href="index.html" class="gap-4 items-center flex">
+                        <img src="./assets/images/logo.png" alt=""/>
+                        <h1 class="font-header font-bold text-4xl cursor-pointer">
+                            News<span class=" text-primary-500 font-header">cast</span>
+                        </h1>
+                    </a>
+                </div>
+                <div class="col-span-12 lg:col-span-8 px-6 flex items-center justify-between bg-[url('./assets/images/promo_cover.jpg')] bg-cover">
+                    <div class="text-white font-light text-xs lg:text-base py-2">
+                        <p>Best selling book and magazine</p>
+                        <p>Theme of all time</p>
+                        <p class="font-header italic text-primary-600 my-1">Experience the change</p>
+                    </div>
+                    <div>
+                        <button class="bg-primary-500 hover:bg-primary-600 hover:transition-all text-white px-2 lg:px-6 lg:py-4 py-2">
+                            Purchase Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lg:mx-auto lg:container lg:my-6">
+            <!-- Contains the proper navigation bar -->
+            <div class="bg-ncDark flex container mx-auto justify-between lg:hidden p-3">
+                <!--Navbar for mobile -->
+                <div class="col-span-4 flex justify-start items-center">
+                    <div class="flex gap-4 items-center">
+                        <img src="./assets/images/logo.png" alt="">
+                        <h1 class="font-header font-bold text-white text-2xl cursor-pointer">
+                            News<span class=" text-primary-500 font-header">cast</span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center cursor-pointer">
+                    <img src="./assets/images/menu_icon.svg"
+                         id="menu_toggle"
+                         width="24px"
+                         height="24px"
+                         alt=""/>
+                </div>
+            </div>
+            <div class="lg:flex container mx-auto items-center origin-top delay-300 scale-y-0 absolute inset-x-0 lg:static lg:scale-100 transition-transform justify-between bg-ncDark lg:pr-6"
+                 id="menu_container">
+                <div class="flex flex-col lg:flex-row">
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:duration-300  font-xl active">Home</a>
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:duration-300  font-xl">International</a>
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:duration-300  font-xl">Sports</a>
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:duration-300  font-xl">Opinion</a>
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:duration-300  font-xl">Business</a>
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:duration-300  font-xl">Youth</a>
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:duration-300  font-xl">Entertainment</a>
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:duration-300  font-xl">Lifestyle</a>
+                    <a href="#"
+                       class="font-header text-white py-4 px-6 hover:bg-primary-500 hover:transition hover:duration-300  font-xl">Pages</a>
+                </div>
+                <div class="pb-4 lg:pb-0">
+                    <!-- Search form -->
+                    <form action="#" class="px-6">
+                        <input type="text"
+                               class="min-h-full w-full lg:w-auto p-4 bg-ncDark placeholder:text-gray-400 placeholder:font-light placeholder:text-xs text-gray-300 font-light text-sm border border-gray-600 outline-none"
+                               placeholder="Search for"/>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="container mx-auto mb-4 lg:mb-8">
+            <div class="grid lg:grid-cols-2 gap-4">
+                <div>
+                    <div style="background-image: url('./assets/images/1.jpg')"
+                         class="bg-cover flex items-end justify-start h-120 h-96">
+                        <div class="p-3">
+                            <p class="text-xs font-light text-gray-300">Craig Braton - Jan 2020</p>
+                            <h3 class="font-header text-xl lg:text-2xl text-white font-bold">
+                                After all is said and done, more is
+                                done
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden lg:grid gap-4 grid-cols-2">
+                    <a href="blog_detail.html" class="block">
+                        <div style="background-image: url('./assets/images/2.jpg')"
+                             class="bg-cover h-48 flex items-end justify-start hover:scale-95 duration-300 hover:transition cursor-pointer">
+                            <div class="p-2">
+                                <p class="text-xs font-light text-gray-300">Craig Braton - Jan 2020</p>
+                                <h3 class="font-header text-xl text-white font-light">
+                                    They're back ! Kennedy Darling named to return to
+                                </h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="blog_detail.html" class="block">
+                        <div style="background-image: url('./assets/images/3.jpg')"
+                             class="bg-cover h-48 flex items-end justify-start hover:scale-95 duration-300 hover:transition cursor-pointer">
+                            <div class="p-2">
+                                <p class="text-xs font-light text-gray-300">
+                                    Craig Braton - Jan 2020
+                                </p>
+                                <h3 class="font-header text-xl text-white font-light">
+                                    Swiss authorities say Uber
+                                    drivers should
+                                </h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="blog_detail.html" class="block col-span-2">
+                        <div style="background-image: url('./assets/images/4.jpg')"
+                             class="bg-cover h-44 flex items-end justify-start hover:scale-95 duration-300 hover:transition cursor-pointer">
+                            <div class="p-2">
+                                <p class="text-xs font-light text-gray-300">
+                                    Craig Braton - Jan 2020
+                                </p>
+                                <h3 class="font-header text-xl text-white font-light">
+                                    Swiss authorities say Uber
+                                    drivers should
+                                </h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="p-4 lg:p-0 container mx-auto">
+            <div class="grid grid-cols-1 space-y-6 lg:space-y-0 lg:grid-cols-3 lg:gap-4">
+                <div class="col-span-1 lg:col-span-2 divide-y divide-ncDark">
+                    <h2 class="text-primary-500 font-header text-2xl py-2">
+                        Don't Miss
+                    </h2>
+                    <div class="grid grid-cols-1 gap-4 space-y-4 lg:space-y-0 lg:grid-cols-2 py-4">
+                        <a href="#" class="block">
+                            <div style="background-image: url('./assets/images/5.jpg');"
+                                 class="bg-cover h-80">
+                            </div>
+                            <p class="font-light text-xs opacity-75 mt-4">
+                                Craig Bator - 27 Dec 2020
+                            </p>
+                            <h3 class="font-header text-2xl my-2">
+                                Now Is the Time to Think About Your Small  Business Success
+                            </h3>
+                            <p class="font-light opacity-75">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas. Metus at in fames vitae posuere ut vel vulputate....
+                            </p>
+                        </a>
+                        <div class="space-y-4">
+                            <a href="#" class="grid grid-cols-4 gap-2">
+                                <div class="col-span-1 bg-cover h-24"
+                                     style="background-image: url('./assets/images/6.jpg');">
+                                </div>
+                                <div class="col-span-3">
+                                    <p class="font-light text-xs">
+                                        Craig Bator - 27 Dec 2020
+                                    </p>
+                                    <h3 class="font-header text-xl my-2">
+                                        Now Is the Time to Think About Your Small  Business Success
+                                    </h3>
+                                </div>
+                            </a>
+                            <a href="#" class="grid grid-cols-4 gap-2">
+                                <div class="col-span-1 bg-cover h-24"
+                                     style="background-image: url('./assets/images/7.jpg');">
+                                </div>
+                                <div class="col-span-3">
+                                    <p class="font-light text-xs">
+                                        Craig Bator - 27 Dec 2020
+                                    </p>
+                                    <h3 class="font-header text-xl my-2">
+                                        Things to Look For in a Financial Trading Platform
+                                    </h3>
+                                </div>
+                            </a>
+                            <a href="#" class="grid grid-cols-4 gap-2">
+                                <div class="col-span-1 bg-cover h-24"
+                                     style="background-image: url('./assets/images/8.jpg');">
+                                </div>
+                                <div class="col-span-3">
+                                    <p class="font-light text-xs">
+                                        Craig Bator - 27 Dec 2020
+                                    </p>
+                                    <h3 class="font-header text-xl my-2">
+                                        The only thing that overcomes hard luck is hard
+                                        work
+                                    </h3>
+                                </div>
+                            </a>
+                            <a href="#" class="grid grid-cols-4 gap-2">
+                                <div class="col-span-1 bg-cover h-24"
+                                     style="background-image: url('./assets/images/9.jpg');">
+                                </div>
+                                <div class="col-span-3">
+                                    <p class="font-light text-xs">
+                                        Craig Bator - 27 Dec 2020
+                                    </p>
+                                    <h3 class="font-header text-xl my-2">
+                                        Success is not a good teacher failure makes you
+                                        humble
+                                    </h3>
+                                </div>
+                            </a>
+                            <a href="#" class="grid grid-cols-4 gap-2">
+                                <div class="col-span-1 bg-cover h-24"
+                                     style="background-image: url('./assets/images/10.jpg');">
+                                </div>
+                                <div class="col-span-3">
+                                    <p class="font-light text-xs">
+                                        Craig Bator - 27 Dec 2020
+                                    </p>
+                                    <h3 class="font-header text-xl my-2">
+                                        At Value-Focused Hotels, the Free Breakfast Gets
+                                        Bigger
+                                    </h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-1 ">
+                    <div class="divide-y divide-ncDark">
+                        <div class="flex justify-between items-end py-2 mt-1">
+                            <a href='#'
+                               class="font-header hover:text-primary-600 active:text-primary-600 text-lg">
+                                Recent
+                            </a>
+                            <a href='#'
+                               class="font-header hover:text-primary-600 active:text-primary-600 text-lg">
+                                Trending
+                            </a>
+                            <a href='#'
+                               class="font-header hover:text-primary-600 active:text-primary-600 text-lg">
+                                Most Views
+                            </a>
+                        </div>
+                        <div>
+                            <div class="space-y-4 my-4">
+                                <a href="#" class="grid grid-cols-4 gap-2">
+                                    <div class="col-span-1 bg-cover h-24"
+                                         style="background-image: url('./assets/images/11.jpg');">
+                                    </div>
+                                    <div class="col-span-3">
+                                        <p class="font-light text-xs">
+                                            Craig Bator - 27 Dec 2020
+                                        </p>
+                                        <h3 class="font-header text-xl my-2">
+                                            Gluten-Free Almond Cake
+                                            with Berries
+                                        </h3>
+                                    </div>
+                                </a>
+                                <a href="#" class="grid grid-cols-4 gap-2">
+                                    <div class="col-span-1 bg-cover h-24"
+                                         style="background-image: url('./assets/images/12.jpg');">
+                                    </div>
+                                    <div class="col-span-3">
+                                        <p class="font-light text-xs">
+                                            Craig Bator - 27 Dec 2020
+                                        </p>
+                                        <h3 class="font-header text-xl my-2">
+                                            Enjoy My Favourite Molten
+                                            Chocolate Cake
+                                        </h3>
+                                    </div>
+                                </a>
+                                <a href="#" class="grid grid-cols-4 gap-2">
+                                    <div class="col-span-1 bg-cover h-24"
+                                         style="background-image: url('./assets/images/13.jpg');">
+                                    </div>
+                                    <div class="col-span-3">
+                                        <p class="font-light text-xs">
+                                            Craig Bator - 27 Dec 2020
+                                        </p>
+                                        <h3 class="font-header text-xl my-2">
+                                            They back return to you
+                                            Kennedy Darlings
+                                        </h3>
+                                    </div>
+                                </a>
+                                <a href="#" class="grid grid-cols-4 gap-2">
+                                    <div class="col-span-1 bg-cover h-24"
+                                         style="background-image: url('./assets/images/14.jpg');">
+                                    </div>
+                                    <div class="col-span-3">
+                                        <p class="font-light text-xs">
+                                            Craig Bator - 27 Dec 2020
+                                        </p>
+                                        <h3 class="font-header text-xl my-2">
+                                            The art of racing with speed
+                                            Motor GP
+                                        </h3>
+                                    </div>
+                                </a>
+                                <a href="#" class="grid grid-cols-4 gap-2">
+                                    <div class="col-span-1 bg-cover h-24"
+                                         style="background-image: url('./assets/images/15.jpg');">
+                                    </div>
+                                    <div class="col-span-3">
+                                        <p class="font-light text-xs">
+                                            Craig Bator - 27 Dec 2020
+                                        </p>
+                                        <h3 class="font-header text-xl my-2">
+                                            Home team takes the win
+                                            – NBA 2020
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="p-4 lg:p-0 container mx-auto">
+            <div class="divide-y divide-primary-500">
+                <h2 class="text-primary-500 font-header text-2xl py-4">
+                    Entertainment
+                </h2>
+                <div class="py-4">
+                    <div class="bg-center bg-cover h-[450px] items-end flex justify-start p-4"
+                         style="background-image: url('./assets/images/16.jpg')">
+                        <div class="space-y-6">
+                            <a href="#" class="font-header text-2xl lg:text-4xl text-white">
+                                Amanda Seyfried became ‘really obsessed’ with ghost stories
+                            </a>
+                            <p class="font-light opacity-75 max-w-lg text-white">
+                                Hollywood actress Amanda Seyfried has recalled the time when she became obsessed with ghost stories
+                            </p>
+                        </div>
+                    </div>
+                    <div class="my-4 grid grid-cols-1 lg:grid-cols-3 space-y-4 lg:space-y-0">
+                        <a href="#" class="grid grid-cols-4 gap-2">
+                            <div class="col-span-1 bg-cover h-24"
+                                 style="background-image: url('./assets/images/17.jpg');">
+                            </div>
+                            <div class="col-span-3">
+                                <p class="font-light text-xs">
+                                    Craig Bator - 27 Dec 2020
+                                </p>
+                                <h3 class="font-header text-xl my-2">
+                                    Amanda Seyfried became ‘really
+                                    obsessed’ with ghost stories
+                                </h3>
+                            </div>
+                        </a>
+                        <a href="#" class="grid grid-cols-4 gap-2">
+                            <div class="col-span-1 bg-cover h-24"
+                                 style="background-image: url('./assets/images/18.jpg');">
+                            </div>
+                            <div class="col-span-3">
+                                <p class="font-light text-xs">
+                                    Craig Bator - 27 Dec 2020
+                                </p>
+                                <h3 class="font-header text-xl my-2">
+                                    Irrfan Khan’s Last film “ The Song
+                                    of Scorpions” to release in 2021
+                                </h3>
+                            </div>
+                        </a>
+                        <a href="#" class="grid grid-cols-4 gap-2">
+                            <div class="col-span-1 bg-cover h-24"
+                                 style="background-image: url('./assets/images/19.jpg');">
+                            </div>
+                            <div class="col-span-3">
+                                <p class="font-light text-xs">
+                                    Craig Bator - 27 Dec 2020
+                                </p>
+                                <h3 class="font-header text-xl my-2">
+                                    Apee Karim blessed with a
+                                    daughter
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="p-4 lg:p-0 container mx-auto">
+            <div class="grid grid-cols-1 space-y-6 lg:space-y-0 lg:grid-cols-3 lg:gap-4">
+                <div class="col-span-1 lg:col-span-2 divide-y divide-ncDark">
+                    <h2 class="text-primary-500 font-header text-2xl py-2">
+                        Sports
+                    </h2>
+                    <div class="grid grid-cols-1 gap-4 space-y-4 lg:space-y-0 lg:grid-cols-2 py-4">
+                        <div>
+                            <a href="#" class="block">
+                                <div style="background-image: url('./assets/images/20.jpg');"
+                                     class="bg-cover h-80">
+                                </div>
+                                <p class="font-light text-xs opacity-75 mt-4">
+                                    Craig Bator - 27 Dec 2020
+                                </p>
+                                <h3 class="font-header text-2xl my-2">
+                                    Solskjaer dismisses Klopp comments on Man Utd penalty record
+                                </h3>
+                                <p class="font-light opacity-75">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas. Metus at in fames vitae posuere ut vel vulputate....
+                                </p>
+                            </a>
+                        </div>
+                        <div class="space-y-4">
+                            <a href="#" class="grid grid-cols-4 gap-2">
+                                <div class="col-span-1 bg-cover h-24"
+                                     style="background-image: url('./assets/images/21.jpg');">
+                                </div>
+                                <div class="col-span-3">
+                                    <p class="font-light text-xs">
+                                        Craig Bator - 27 Dec 2020
+                                    </p>
+                                    <h3 class="font-header text-xl my-2">
+                                        South Africa hammer injury-hit Sri Lanka
+                                        Player
+                                    </h3>
+                                </div>
+                            </a>
+                            <a href="#" class="grid grid-cols-4 gap-2">
+                                <div class="col-span-1 bg-cover h-24"
+                                     style="background-image: url('./assets/images/22.jpg');">
+                                </div>
+                                <div class="col-span-3">
+                                    <p class="font-light text-xs">
+                                        Craig Bator - 27 Dec 2020
+                                    </p>
+                                    <h3 class="font-header text-xl my-2">
+                                        Southee-lead New Zealand have Pakistan on
+                                        the ropes
+                                    </h3>
+                                </div>
+                            </a>
+                            <a href="#" class="grid grid-cols-4 gap-2">
+                                <div class="col-span-1 bg-cover h-24"
+                                     style="background-image: url('./assets/images/23.jpg');">
+                                </div>
+                                <div class="col-span-3">
+                                    <p class="font-light text-xs">
+                                        Craig Bator - 27 Dec 2020
+                                    </p>
+                                    <h3 class="font-header text-xl my-2">
+                                        The only thing that overcomes hard luck is hard
+                                        work
+                                    </h3>
+                                </div>
+                            </a>
+                            <a href="#" class="grid grid-cols-4 gap-2">
+                                <div class="col-span-1 bg-cover h-24"
+                                     style="background-image: url('./assets/images/24.jpg');">
+                                </div>
+                                <div class="col-span-3">
+                                    <p class="font-light text-xs">
+                                        Craig Bator - 27 Dec 2020
+                                    </p>
+                                    <h3 class="font-header text-xl my-2">
+                                        Success is not a good teacher failure makes you
+                                        humble
+                                    </h3>
+                                </div>
+                            </a>
+                            <a href="#" class="grid grid-cols-4 gap-2">
+                                <div class="col-span-1 bg-cover h-24"
+                                     style="background-image: url('./assets/images/25.jpg');">
+                                </div>
+                                <div class="col-span-3">
+                                    <p class="font-light text-xs">
+                                        Craig Bator - 27 Dec 2020
+                                    </p>
+                                    <h3 class="font-header text-xl my-2">
+                                        Rahane-led India bury ghosts of Adelaide at
+                                        Melbourne
+                                    </h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="divide-y divide-ncDark">
+                    <h2 class="font-header text-primary-500 py-2 text-2xl">
+                        Stay Connected
+                    </h2>
+                    <div class="space-y-8">
+                        <div class="grid grid-cols-2 gap-2 py-4 gap-y-4">
+                            <button class="bg-[#4281FF] hover:bg-[#1A66FF] hover:duration-300 py-4 px-2 text-center">
+                                <div class="flex item-center justify-center gap-4">
+                                    <img src='./assets/images/facebook.svg'/>
+                                    <p class="text-sm text-white">
+                                        20000 Followers
+                                    </p>
+                                </div>
+                            </button>
+                            <button class="bg-[#C23785] hover:bg-[#AF3278] hover:duration-300 py-4 px-2 text-center">
+                                <div class="flex item-center justify-center gap-4">
+                                    <img src='./assets/images/instagram.svg'/>
+                                    <p class="text-sm text-white">
+                                        20000 Followers
+                                    </p>
+                                </div>
+                            </button>
+                            <button class="bg-[#EF5043] hover:bg-[#ED3A2C] hover:duration-300 py-4 px-2 text-center">
+                                <div class="flex item-center justify-center gap-4">
+                                    <img src='./assets/images/youtube.svg'/>
+                                    <p class="text-sm text-white">
+                                        20000 Followers
+                                    </p>
+                                </div>
+                            </button>
+                            <button class="bg-[#42C0F5] hover:bg-[#2AB8F4] hover:duration-300 py-4 px-2 text-center">
+                                <div class="flex item-center justify-center gap-4">
+                                    <img src='./assets/images/twitter.svg'/>
+                                    <p class="text-sm text-white">
+                                        20000 Followers
+                                    </p>
+                                </div>
+                            </button>
+                            <button class="bg-[#1B7BFD] hover:bg-[#026DFD] hover:duration-300 py-4 px-2 text-center">
+                                <div class="flex item-center justify-center gap-4">
+                                    <img src='./assets/images/Behance.svg'/>
+                                    <p class="text-sm text-white">
+                                        20000 Followers
+                                    </p>
+                                </div>
+                            </button>
+                            <button class="bg-[#F7679D] hover:bg-[#F6518F] hover:duration-300 py-4 px-2 text-center">
+                                <div class="flex item-center justify-center gap-4">
+                                    <img src='./assets/images/dribbble.svg'/>
+                                    <p class="text-sm text-white">
+                                        20000 Followers
+                                    </p>
+                                </div>
+                            </button>
+                        </div>
+                        <div style="background-image: url('./assets/images/26.jpg');"
+                             class="bg-cover h-60 flex items-center justify-center">
+                            <h4 class="font-header text-2xl text-white">
+                                Ad
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="p-4 lg:p-0 container mx-auto">
+            <div class="grid grid-cols-1 space-y-6 lg:space-y-0 lg:grid-cols-3 lg:gap-4">
+                <div class="col-span-1 lg:col-span-2 divide-y divide-ncDark">
+                    <h2 class="text-primary-500 font-header text-2xl py-2">
+                        Lifestyle
+                    </h2>
+                    <div class="grid grid-cols-1 gap-4 space-y-4 lg:space-y-0 lg:grid-cols-2 py-4">
+                        <a href="#" class="block">
+                            <div style="background-image: url('./assets/images/27.jpg');"
+                                 class="bg-cover h-80">
+                            </div>
+                            <p class="font-light text-xs opacity-75 mt-4">
+                                Craig Bator - 27 Dec 2020
+                            </p>
+                            <h3 class="font-header text-2xl my-2">
+                                ‘Institutional delivery vital for reducing maternal and neonatal deaths’
+                            </h3>
+                            <p class="font-light opacity-75">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas. Metus at in fames vitae posuere ut vel vulputate....
+                            </p>
+                        </a>
+                        <a href="#" class="block">
+                            <div style="background-image: url('./assets/images/28.jpg');"
+                                 class="bg-cover h-80">
+                            </div>
+                            <p class="font-light text-xs opacity-75 mt-4">
+                                Craig Bator - 27 Dec 2020
+                            </p>
+                            <h3 class="font-header text-2xl my-2">
+                                ‘Being self-controlled child may lead to healthier middle-age
+                            </h3>
+                            <p class="font-light opacity-75">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas. Metus at in fames vitae posuere ut vel vulputate....
+                            </p>
+                        </a>
+                        <a href="#" class="grid grid-cols-4 gap-2">
+                            <div class="col-span-1 bg-cover h-24"
+                                 style="background-image: url('./assets/images/29.jpg');">
+                            </div>
+                            <div class="col-span-3">
+                                <p class="font-light text-xs">
+                                    Craig Bator - 27 Dec 2020
+                                </p>
+                                <h3 class="font-header text-xl my-2">
+                                    Best things you can do on
+                                    a solo mountain climb
+                                </h3>
+                            </div>
+                        </a>
+                        <a href="#" class="grid grid-cols-4 gap-2">
+                            <div class="col-span-1 bg-cover h-24"
+                                 style="background-image: url('./assets/images/30.jpg');">
+                            </div>
+                            <div class="col-span-3">
+                                <p class="font-light text-xs">
+                                    Craig Bator - 27 Dec 2020
+                                </p>
+                                <h3 class="font-header text-xl my-2">
+                                    How to use basic design
+                                    principles your home
+                                </h3>
+                            </div>
+                        </a>
+                        <a href="#" class="grid grid-cols-4 gap-2">
+                            <div class="col-span-1 bg-cover h-24"
+                                 style="background-image: url('./assets/images/31.jpg');">
+                            </div>
+                            <div class="col-span-3">
+                                <p class="font-light text-xs">
+                                    Craig Bator - 27 Dec 2020
+                                </p>
+                                <h3 class="font-header text-xl my-2">
+                                    Creative decorationg with
+                                    houseplants
+                                </h3>
+                            </div>
+                        </a>
+                        <a href="#" class="grid grid-cols-4 gap-2">
+                            <div class="col-span-1 bg-cover h-24"
+                                 style="background-image: url('./assets/images/32.jpg');">
+                            </div>
+                            <div class="col-span-3">
+                                <p class="font-light text-xs">
+                                    Craig Bator - 27 Dec 2020
+                                </p>
+                                <h3 class="font-header text-xl my-2">
+                                    How to burn calories with
+                                    pleasant activites
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="h-56 bg-[#DEDADA] flex justify-center items-center">
+                        <div class="space-y-4">
+                            <h5 class="font-header text-2xl text-center">
+                                Get latest updates
+                            </h5>
+                            <form action="#" class="mt-4 space-y-4">
+                                <input type="text"
+                                       class="p-4 h-10 placeholder:opacity-60 block text-center placeholder:text-center placeholder:text-sm outline-none"
+                                       placeholder="Your email id "/>
+                                <button type="submit"
+                                        class="px-4 py-2 bg-primary-500 block w-full text-center` hover:bg-primary-600 duration-300 transition-colors text-white">
+                                    Subscribe
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-span-1 lg:col-span-2 divide-y divide-ncDark">
+                        <h2 class="text-primary-500 font-header text-xl py-2">
+                            Categories
+                        </h2>
+                        <div class="flex flex-col pt-6 space-y-4">
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center">
+                                    <img src="./assets/images/caret_right.svg"
+                                         alt=""
+                                         srcset=""
+                                         class="inline mr-2">
+                                    <span>
+                                        Lifestyle
+                                    </span>
+                                </div>
+                                <div class="bg-primary-500 h-10 w-10 text-center flex items-center justify-center">
+                                    <p class="text-white">
+                                        50
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center">
+                                    <img src="./assets/images/caret_right.svg"
+                                         alt=""
+                                         srcset=""
+                                         class="inline mr-2">
+                                    <span>
+                                        World
+                                    </span>
+                                </div>
+                                <div class="bg-[#A56CBD] h-10 w-10 text-center flex items-center justify-center">
+                                    <p class="text-white">
+                                        55
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center">
+                                    <img src="./assets/images/caret_right.svg"
+                                         alt=""
+                                         srcset=""
+                                         class="inline mr-2">
+                                    <span>
+                                        Foods
+                                    </span>
+                                </div>
+                                <div class="bg-[#C23785] h-10 w-10 text-center flex items-center justify-center">
+                                    <p class="text-white">
+                                        55
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center">
+                                    <img src="./assets/images/caret_right.svg"
+                                         alt=""
+                                         srcset=""
+                                         class="inline mr-2">
+                                    <span>
+                                        Technology
+                                    </span>
+                                </div>
+                                <div class="bg-[#4C60F5] h-10 w-10 text-center flex items-center justify-center">
+                                    <p class="text-white">
+                                        55
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center">
+                                    <img src="./assets/images/caret_right.svg"
+                                         alt=""
+                                         srcset=""
+                                         class="inline mr-2">
+                                    <span>
+                                        Sports
+                                    </span>
+                                </div>
+                                <div class="bg-[#0088FF] h-10 w-10 text-center flex items-center justify-center">
+                                    <p class="text-white">
+                                        42
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center">
+                                    <img src="./assets/images/caret_right.svg"
+                                         alt=""
+                                         srcset=""
+                                         class="inline mr-2">
+                                    <span>
+                                        Football
+                                    </span>
+                                </div>
+                                <div class="bg-[#F7679D] h-10 w-10 text-center flex items-center justify-center">
+                                    <p class="text-white">
+                                        5
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center">
+                                    <img src="./assets/images/caret_right.svg"
+                                         alt=""
+                                         srcset=""
+                                         class="inline mr-2">
+                                    <span>
+                                        Cricket
+                                    </span>
+                                </div>
+                                <div class="bg-[#42C0F5] h-10 w-10 text-center flex items-center justify-center">
+                                    <p class="text-white">
+                                        67
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center">
+                                    <img src="./assets/images/caret_right.svg"
+                                         alt=""
+                                         srcset=""
+                                         class="inline mr-2">
+                                    <span>
+                                        COVID 19
+                                    </span>
+                                </div>
+                                <div class="bg-[#49CFE8] h-10 w-10 text-center flex items-center justify-center">
+                                    <p class="text-white">
+                                        12
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lg:p-0 container mx-auto lg:grid lg:grid-cols-4 my-6">
+            <div class="lg:col-span-3">
+                <div class="px-6 flex items-center justify-between bg-[url('././assets/images/promo_cover.jpg')] bg-cover">
+                    <div class="text-white font-light text-xs lg:text-base py-2">
+                        <p>
+                            Best selling book and magazine
+                        </p>
+                        <p>
+                            Theme of all time
+                        </p>
+                        <p class="font-header italic text-primary-600 my-1">
+                            Experience the change
+                        </p>
+                    </div>
+                    <div>
+                        <button class="bg-primary-500 hover:bg-primary-600 hover:transition-all text-white px-2 lg:px-6 lg:py-4 py-2">
+                            Purchase Now
+                        </button>
+                    </div>
+                </div>
+                <div class="p-4 lg:0 divide-y divide-ncDark">
+                    <h2 class="text-primary-500 font-header text-2xl py-2">
+                        Videos
+                    </h2>
+                    <div class="grid grid-cols-3 gap-4 py-4">
+                        <a href="#" class="block col-span-3 ">
+                            <div class="bg-cover h-96 p-4"
+                                 style="background-image: url('./assets/images/33.jpg')">
+                                <div class="flex items-end justify-center h-1/2">
+                                    <img src="./assets/images/play.svg" alt="">
+                                </div>
+                                <div class="flex flex-col justify-end h-1/2">
+                                    <p class="text-white font-light opacity-75">
+                                        Craig Bator - 27 Dec 2020
+                                    </p>
+                                    <h3 class="text-2xl font-bold text-white">
+                                        Play This Game for Free on Epic Store
+                                        This Weekend
+                                    </h3>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="col-span-3 lg:col-span-1 ">
+                            <a href="#" class="block">
+                                <div class="bg-cover flex items-center h-48 justify-center"
+                                     style="background-image: url('./assets/images/34.jpg');">
+                                    <img src="./assets/images/play.svg" alt="" srcset="">
+                                </div>
+                                <div class="mt-4">
+                                    <p class="font-light text-xs">
+                                        Craig Bator - 27 Dec 2020
+                                    </p>
+                                    <h3 class="font-header text-xl my-2">
+                                        At Value-Focused Hotels, the Free Breakfast Gets Bigger
+                                    </h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-span-3 lg:col-span-1 ">
+                            <a href="#" class="block">
+                                <div class="bg-cover flex items-center h-48 justify-center"
+                                     style="background-image: url('./assets/images/35.jpg');">
+                                    <img src="./assets/images/play.svg" alt="" srcset="">
+                                </div>
+                                <div class="mt-4">
+                                    <p class="font-light text-xs">
+                                        Craig Bator - 27 Dec 2020
+                                    </p>
+                                    <h3 class="font-header text-xl my-2">
+                                        Failure is the condiment that gives success its flavor
+                                    </h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-span-3 lg:col-span-1 ">
+                            <a href="#" class="block">
+                                <div class="bg-cover flex items-center h-48 justify-center"
+                                     style="background-image: url('./assets/images/36.jpg');">
+                                    <img src="./assets/images/play.svg" alt="" srcset="">
+                                </div>
+                                <div class="mt-4">
+                                    <p class="font-light text-xs">
+                                        Craig Bator - 27 Dec 2020
+                                    </p>
+                                    <h3 class="font-header text-xl my-2">
+                                        Les nouveaux maillots du Real Madrid pour la saison
+                                    </h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class=" bg-ncDark ">
+            <div class="container mx-auto px-4 py-8">
+                <div class="grid grid-cols-4 gap-2">
+                    <div class="col-span-4 lg:col-span-1 space-y-8">
+                        <div class="gap-4 items-center flex">
+                            <img src="./assets/images/logo.png" alt=""/>
+                            <h1 class="font-header font-bold text-4xl text-white cursor-pointer">
+                                News<span class=" text-primary-500 font-header">cast</span>
+                            </h1>
+                        </div>
+                        <p class="text-white opacity-75">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, pellentesque dictum posuere id diam rutrum.
+                        </p>
+                        <div class="flex items-center justify-start gap-x-8">
+                            <div class="h-12 w-12 rounded-[48px] flex bg-[#1B7BFD] justify-center items-center">
+                                <img src="./assets/images/facebook.svg" alt="">
+                            </div>
+                            <div class="h-12 w-12 rounded-[48px] bg-[#42C0F5] flex justify-center items-center">
+                                <img src="./assets/images/twitter.svg" alt="">
+                            </div>
+                            <div class="h-12 w-12 rounded-[48px] bg-[#C23785] flex justify-center items-center">
+                                <img src="./assets/images/instagram.svg" alt="">
+                            </div>
+                            <div class="h-12 w-12 rounded-[48px] bg-[#EF5043] flex justify-center items-center">
+                                <img src="./assets/images/youtube.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            let toggle = document.getElementById('menu_toggle');
+            let menuContainer = document.getElementById('menu_container');
+            toggle.addEventListener('click', () => {
+                menuContainer.classList.toggle('scale-y-0');
+            } , false)
+
+
+        </script>
+    </body>
+</html>
